@@ -4,30 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/contagem.png"
+      type="image/x-icon"
+    />
+    <title>Contador: contagem simplificada.</title>
   </head>
   <body>
     <div class="container">
       <div class="content">
+        <header>
+          <h1>Contador</h1>
+          <span>Contagem simples, resultados precisos</span>
+        </header>
+
         <section class="input-data">
           <div class="input-group">
             <span>
               <p>Inicio:</p>
-              <input type="number" name="inicio" id="txti" class="in" />
+              <input
+                type="number"
+                name="start"
+                id="start"
+                class="input-style"
+              />
             </span>
 
             <span>
               <p>Fim:</p>
-              <input type="number" name="fim" id="txtf" class="in" />
+              <input type="number" name="end" id="end" class="input-style" />
             </span>
 
             <span>
               <p>Salto:</p>
-              <input type="number" name="passo" id="txtp" class="in" />
+              <input type="number" name="step" id="step" class="input-style" />
             </span>
           </div>
 
-          <button onclick="contar()" class="counter-result-btn">Contar</button>
+          <button onclick="startCounter()" class="counter-result-btn">
+            Contar
+          </button>
         </section>
 
         <section id="result" class="result">Preparando a contagem...</section>
